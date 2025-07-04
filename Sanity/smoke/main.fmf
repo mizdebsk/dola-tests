@@ -1,0 +1,13 @@
+summary: Dola smoke test
+description: |
+  Test building declarative package with Dola.
+require:
+  - rpm-build
+  - redhat-rpm-config
+  - java-srpm-macros
+  - dola
+  - maven-compiler-plugin
+  - maven-jar-plugin
+  - maven-resources-plugin
+  - maven-surefire-plugin
+  - junit5

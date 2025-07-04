@@ -1,0 +1,24 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>smoke</groupId>
+  <artifactId>smoke-test</artifactId>
+  <version>1</version>
+  <profiles>
+    <profile>
+      <id>quality</id>
+      <dependencies>
+	<dependency>
+	  <groupId>com.example</groupId>
+	  <artifactId>bad-dep</artifactId>
+	  <version>1.2.3</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.junit.jupiter</groupId>
+	  <artifactId>${jupiter}</artifactId>
+	  <version>5.13.1</version>
+	  <scope>test</scope>
+	</dependency>
+      </dependencies>
+    </profile>
+  </profiles>
+</project>
